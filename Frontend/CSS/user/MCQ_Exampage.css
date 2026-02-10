@@ -1,0 +1,154 @@
+/* ===== Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.exam-wrapper.disabled {
+  display: none;
+}
+
+.fullscreen-overlay.disabled {
+  display: none;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  background: #2a3c67;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  gap: 16px;
+}
+
+.fullscreen-overlay button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* ===== Wrapper ===== */
+.exam-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 30px 20px;
+}
+
+.exam-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.timer {
+  background-color: #e0e7ff;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.exam-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Card ===== */
+.exam-card {
+  background-color: white;
+  width: 480px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== Question Header ===== */
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#question-text {
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 75%;
+}
+
+#question-marks {
+  background-color: #e0e7ff;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* ===== Options ===== */
+#question-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+#question-options li {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #cbd5f5;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+#question-options li:hover {
+  background-color: #eef2ff;
+  border-color: #2563eb;
+}
+
+/* Selected option (add via JS later) */
+#question-options li.selected {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* ===== Button ===== */
+#next-ques {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+#next-ques:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}

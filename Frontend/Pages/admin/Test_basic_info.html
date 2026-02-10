@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Test | Admin</title>
+
+  <link rel="stylesheet" href="../../CSS/admin/Test_basic_info.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Card -->
+    <div class="form-card">
+      <h2>Create New Test</h2>
+      <p class="subtitle">Enter basic information for the test</p>
+
+      <input
+        id="title-input"
+        type="text"
+        placeholder="Test Title"
+        required
+      />
+
+      <input
+        id="testno-input"
+        type="text"
+        placeholder="Test number (e.g. Test 1)"
+        required
+      />
+
+      <input
+        id="Testtype-input"
+        type="text"
+        placeholder="Test type (MCQ / Theory)"
+        required
+      />
+
+      <input
+        id="Totalmarks-input"
+        type="number"
+        placeholder="Total Marks"
+        required
+      />
+
+      <input
+        id="Duration-input"
+        type="number"
+        placeholder="Duration(in minutes)"
+        required
+      />
+
+      <button id="create-test" class="primary">
+        Create Test
+      </button>
+    </div>
+
+  </div>
+
+  <script src="../../JS/admin/Test_basic_info.js"></script>
+</body>
+</html>

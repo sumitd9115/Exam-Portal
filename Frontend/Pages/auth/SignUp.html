@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Exam Portal</title>
+
+  <link rel="stylesheet" href="../../CSS/auth/SignUp.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Signup Card -->
+  <div class="login-card">
+    <h2>Create Account ✨</h2>
+    <p class="subtitle">Join Exam Portal and start practicing</p>
+
+    <form class="signup-form">
+      <input id="name-input" type="text" placeholder="Full name" required />
+      <input id="email-input" type="email" placeholder="Email address" required />
+      <input id="password-input" type="password" placeholder="Password" required />
+      <input id="confirm-password-input" type="password" placeholder="Confirm password" required />
+
+      <button id="submit-button" type="submit">Sign Up</button>
+
+      <p class="footer-text">
+        Already have an account?
+        <a href="/login">Login</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="../../JS/auth/Signup.js"></script>
+</body>
+</html>

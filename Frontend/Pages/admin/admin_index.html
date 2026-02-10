@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../../CSS/admin/admin_index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>Exam Portal (Admin)</h1>
+
+      <div class="user-dropdown">
+        <span id="user-name"></span>
+        <span class="dropdown-arrow">▾</span>
+        <div class="dropdown-content">
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-content">
+      <div class="admin-card">
+        <h3>Create New Test</h3>
+        <p>Add a new exam with questions, duration and rules.</p>
+        <button onclick="window.location.href = '/Test_basic_info'">
+          Add Test
+        </button>
+      </div>
+    </div>
+
+    <div class="main-content-wrapper">
+      <h2 class="section-heading">Available Tests</h2>
+
+      <div class="main-content" id="main-content">
+        <!-- <div class="section-1">
+          <h3>Data Structures – MCQ Test</h3>
+
+          <p><strong>Test No:</strong> 101</p>
+          <p><strong>Total Marks:</strong> 50</p>
+          <p><strong>Duration:</strong> 60 Minutes</p>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="../../JS/admin/admin_index.js"></script>
+  </body>
+</html>

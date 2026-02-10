@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ===== User Dropdown ===== */
+.user-dropdown {
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+}
+
+#user-name {
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  font-size: 14px;
+  color: #fde68a;
+  transition: transform 0.25s ease;
+}
+
+.user-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 38px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dropdown-content button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dropdown-content button:hover {
+  background-color: #dc2626;
+}
+
+.result-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 1000px;
+}
+
+.result-table th,
+.result-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.result-table tr.correct {
+  background-color: #e8f8f5;
+}
+
+.result-table tr.wrong {
+  background-color: #fdecea;
+}
+
+/* .result-table tr:hover {
+  background-color: #f1f1f1;
+} */
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.pass.disabled {
+    display: none;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+.fail.disabled {
+    display: none;
+}
+
+#back-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 25px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#back-btn:hover {
+  background-color: #1a252f;
+}

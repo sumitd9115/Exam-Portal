@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attempted Tests</title>
+
+    <link rel="stylesheet" href="../../CSS/user/AttemptedTests.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1>Exam Portal</h1>
+
+      <div class="user-dropdown">
+        <span id="user-name">Student</span>
+        <span class="dropdown-arrow">▾</span>
+        <div class="dropdown-content">
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="upper-buttons">
+      <button onclick="window.location.href = '/Home'">Pending Tests</button>
+      <button class="active" onclick="window.location.href = '/AttemptedTests'">
+        Attempted Tests
+      </button>
+    </div>
+
+    <!-- Attempted Tests -->
+    <div class="attempted-tests">
+      <ul id="tests-list">
+        <!-- <li class="attempted-card">
+          <h3>Operating Systems</h3>
+          <p>Testno: 1</p>
+          <p>Score: <strong>18 / 25</strong></p>
+          <button>View Result</button>
+        </li>
+
+        <li class="attempted-card">
+          <h3>Database Management Systems</h3>
+          <p>Score: <strong>12 / 25</strong></p>
+          <p>Status: <span class="status failed">Failed</span></p>
+          <button>View Result</button>
+        </li> -->
+        
+        <!-- <div class="attempted-card empty-card">
+        <h3>🎯 No Pending Tests</h3>
+        <p>You have completed all available exams.</p> -->
+      </ul>
+    </div>
+    </div>
+
+    <script src="../../JS/user/AttemptedTests.js"></script>
+  </body>
+</html>

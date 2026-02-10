@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add MCQ Question | Admin</title>
+
+  <link rel="stylesheet" href="../../CSS/admin/MCQ_Test_Ques_Ans.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Card -->
+    <div class="form-card">
+      <h2>Add MCQ Question</h2>
+      <p class="subtitle">Enter question details carefully</p>
+
+      <input id="Ques-input" type="text" placeholder="Enter question" required />
+
+      <div class="options">
+        <input id="option1-input" type="text" placeholder="Enter your Option" required />
+        <!-- <input id="option2-input" type="text" placeholder="Option 2" required />
+        <input id="option3-input" type="text" placeholder="Option 3" required />
+        <input id="option4-input" type="text" placeholder="Option 4" required /> -->
+      </div>
+
+      <div class="options-btn">
+        <button id="Add-options-btn">+ Add more options</button>
+        <button id="Delete-options-btn">- Delete option</button>
+      </div>
+
+      <input id="answer-input" type="text" placeholder="Correct answer" required />
+      <input id="marks-input" type="number" placeholder="Marks" required />
+
+      <div class="action-buttons">
+        <button id="add-ques" class="primary">Add Question</button>
+        <button id="done-btn" class="secondary">Done</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../JS/admin/MCQ_Test_Ques_Ans.js"></script>

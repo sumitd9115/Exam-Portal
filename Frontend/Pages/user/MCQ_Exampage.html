@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Exam | Exam Portal</title>
+
+    <link rel="stylesheet" href="../../CSS/user/MCQ_Exampage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="fullscreen-overlay">
+      <h2>Exam requires fullscreen mode</h2>
+      <button id="enterFullscreenBtn">Enter Fullscreen & Start Exam</button>
+    </div>
+
+    <div class="exam-wrapper disabled">
+      <div class="exam-header">
+        <div class="timer">⏱️ Time Left: <span id="timer"></span></div>
+      </div>
+
+      <div class="exam-card-wrapper">
+        <div class="exam-card">
+          <div class="question-header">
+            <h2 id="question-text"></h2>
+            <span id="question-marks"></span>
+          </div>
+
+          <ul id="question-options"></ul>
+
+          <button id="next-ques">Next Question</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../JS/user/MCQ_Exampage.js"></script>
+  </body>
+</html>

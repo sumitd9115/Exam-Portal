@@ -1,0 +1,189 @@
+/* ===== Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ===== User Dropdown ===== */
+.user-dropdown {
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#user-name {
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  font-size: 14px;
+  color: #fde68a;
+  transition: transform 0.25s ease;
+}
+
+.user-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 38px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-content button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dropdown-content button:hover {
+  background-color: #dc2626;
+}
+
+/* ===== Admin Content ===== */
+.admin-content {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* ===== Admin Card ===== */
+.admin-card {
+  background-color: white;
+  width: 360px;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.admin-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.admin-card p {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+/* ===== Button ===== */
+.admin-card button {
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.admin-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Wrapper for heading + cards */
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers heading + card container */
+  margin-top: 32px;
+}
+
+/* Heading */
+.section-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0f172a; /* use white if dark bg */
+  text-align: center;
+}
+
+/* Card container */
+.main-content {
+  display: flex;
+  justify-content: center; /* centers cards row */
+  flex-wrap: wrap;         /* responsive */
+  gap: 24px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+/* ===== Exam Card ===== */
+.section-1 {
+  background-color: white;
+  width: 320px;
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.section-1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.section-1 h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-1 p {
+  font-size: 14px;
+  color: #475569;
+}

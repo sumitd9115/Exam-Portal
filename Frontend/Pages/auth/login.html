@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Exam Portal</title>
+
+  <link rel="stylesheet" href="../../CSS/auth/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Login Card -->
+  <div class="login-card">
+    <h2>Welcome Back 👋</h2>
+    <p class="subtitle">Login to continue to Exam Portal</p>
+
+    <form class="login-form">
+      <input id="email-input" type="email" placeholder="Email address" required />
+      <input id="password-input" type="password" placeholder="Password" required />
+
+      <button id="submit-button" type="submit">Login</button>
+
+      <p class="footer-text">
+        Don’t have an account?
+        <a href="/signup">Sign Up</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="../../JS/auth/login.js"></script>
+</body>
+</html>
