@@ -18,52 +18,53 @@ app.use("/", logoutRoute);
 
 app.use(express.static(path.join(__dirname, "../Frontend")));
 
-app.get("/Home", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/Pages/user/index.html"));
+// Both Authentication Routes
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/Pages/auth/login-page.html"));
 });
 
+app.get("/signup", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/Pages/auth/signup-page.html"));
+});
+
+// Admin Routes
 app.get("/adminHome", (req, res) => {
   res.sendFile(
-    path.join(__dirname, "../Frontend/Pages/admin/admin_index.html"),
+    path.join(__dirname, "../Frontend/Pages/admin/admin-dashboard.html"),
   );
 });
 
-app.get("/AttemptedTests", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "../Frontend/Pages/user/AttemptedTests.html"),
-  );
-});
-
-app.get("/MCQ_Exampage", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "../Frontend/Pages/user/MCQ_Exampage.html"),
-  );
-});
-
-app.get("/viewResults", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/Pages/user/viewResults.html"));
-});
-
-// Admin Side Routes
 app.get("/Test_basic_info", (req, res) => {
   res.sendFile(
-    path.join(__dirname, "../Frontend/Pages/admin/Test_basic_info.html"),
+    path.join(__dirname, "../Frontend/Pages/admin/test-basic-info.html"),
   );
 });
 
 app.get("/MCQ_Test_Ques_Ans", (req, res) => {
   res.sendFile(
-    path.join(__dirname, "../Frontend/Pages/admin/MCQ_Test_Ques_Ans.html"),
+    path.join(__dirname, "../Frontend/Pages/admin/mcq-test-ques-ans.html"),
   );
 });
 
-// Both Admin and User Side Routes
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/Pages/auth/login.html"));
+// User Routes
+app.get("/Home", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/Pages/user/user-dashboard.html"));
 });
 
-app.get("/signup", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/Pages/auth/SignUp.html"));
+app.get("/AttemptedTests", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../Frontend/Pages/user/attempted-tests.html"),
+  );
+});
+
+app.get("/MCQ_Exampage", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../Frontend/Pages/user/mcq-exam-page.html"),
+  );
+});
+
+app.get("/viewResults", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/Pages/user/view-results.html"));
 });
 
 app.listen(3000, () =>
